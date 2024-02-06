@@ -1,6 +1,25 @@
+* {
+  margin: 0;
+}
+
 html{
   --primary-text-color:#000000;
   --primary-bg-color:#f0f4e2;
   --footer-text-color:#000000;
   --footer-bg-color:#ffffff;
+  --main-color:rgb(5, 72, 28);
+  --anchor-color:rgb(94, 134, 106);
+  --anchor-active-color:rgb(34, 83, 59); 
+}
+
+body{
+  color: var(--main-color);
+}
+
+h1,h2,h3 {
+  font-weight: 600;
+}
+
+a{
+  color: var(--anchor-color);
 }
