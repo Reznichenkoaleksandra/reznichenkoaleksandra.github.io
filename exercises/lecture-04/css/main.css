@@ -4,12 +4,12 @@
   color: black;
   font-size: 200%;
 }
-body{
+/* body{
   font-size: 140%;
 }
 body h1 {
   font-size: 240%;
-}
+} */
 
 h1, h2, h3 {
   color: grey;
@@ -32,10 +32,13 @@ ul > li {
 section p {
 font-size:1.5rem ;
 }
-#h2first{
+.task4 h2:first-of-type{
   color: indigo;
 }
-.first  a {
+p.first >a {
+  color: green;
+}
+p .first  a {
   color:green;
 }
 
@@ -43,9 +46,14 @@ div ~ p {
   color:salmon
 }
 .translucent-box{
-  background-color:hsl(0deg, 100%, 50%) ;
+  background-color:hsl(0deg 100% 50%/0.5) ;
 }
 
-
+body{
+  font-size: 140%;
+}
+body h1 {
+  font-size: 240%;
+}
 
 
