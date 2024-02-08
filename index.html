@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Бренд №1</title>
+  <title>Brand</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/img/logo32.png">
   <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header class="page-header">
@@ -17,9 +21,16 @@
        <a href="about.html">About us</a>
        <a href="contacts.html">Contacts</a>
     </nav>
+
+    <nav>
+        <a href="#" class="far fa-heart" ></a>
+        <a href="#" class="fas fa-dolly-flatbed" ></a>
+        <a href="#" class="far fa-user" ></a>
+
+    </nav>
 </header>
 
-<section id="hero">
+<section id="hero" class="hero">
   <div>
     <p>Нова колекція 2024</p>
     <h1>30% розпродаж зима 2023-2024</h1>
@@ -28,15 +39,32 @@
 </section>
 
 <main>
-  <div>
-    <h2>Наші продукти це</h2>
+  <div class="container">
+    <h2>Наші <span>продукти</span> це</h2>
     <p>Матеріали розроблені найновітнішими технологіями, для наших клієнтів</p>
     <p>комфорт, зручність та доступність</p>
+
+    <div class="roduct-container">
+        <article class="product">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart" ></a>
+            <a href="#" class="fas fa-heart" ></a>
+            <a href="#" class="fas fa-eye" ></a>
+          </div>
+          <div class="image"></div>
+          <div class="content">
+            <h3>Product name</h3>
+            <div class="price">111</div>
+          </div>
+        </article>
+    </div>
+
+
   </div>
 </main>
 
 <footer class="page-footer">
-  <!-- завдання 9 -->
+
 <section>
     <div>
       <h2>About</h2>
@@ -68,11 +96,22 @@
     </div>
 </section>
  
-<section>
+<section class="footer-socials">
+  <ul class="footer-socials-list">
+    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fab fa-github"></i></a></li>
+    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</section>
+
+<section class="footer-ligal">
   <ul>
     <li><a href="#">Terms &amp; Conditions</a></li>
     <li><a href="#">Privacy Policy</a></li>
-    <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+    <li><a href="#">2024 Copyright Shopaholic Inc. &copy;</a></li>
   </ul>
 </section>
 

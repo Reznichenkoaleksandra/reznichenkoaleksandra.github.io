@@ -1,7 +1,7 @@
 /* footer */
 .page-footer{
-color:rgb(76, 88, 78);
-background-color: rgb(131, 173, 145);
+color: var(--footer-text-color);
+background-color: var(--footer-bg-color);
 }
 .page-footer ul {
   list-style: none;
@@ -9,3 +9,14 @@ background-color: rgb(131, 173, 145);
 .page-footer ul > li >a{
 color: rgb(60, 80, 72);
 }
+.footer-ligal{
+background-color:rgb(107, 133, 115);
+ul li a{
+color: rgb(164, 183, 170);
+}}
+.footer-socials{
+  background-color: rgb(125, 156, 135);
+  
+    ul li a {
+      color: rgb(102, 121, 108);
+}}

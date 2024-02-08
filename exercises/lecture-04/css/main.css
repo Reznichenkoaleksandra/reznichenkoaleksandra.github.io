@@ -48,6 +48,9 @@ div ~ p {
 .translucent-box{
   background-color:hsl(0deg 100% 50%/0.5) ;
 }
+:root{
+  font-size: 100%;
+}
 
 body{
   font-size: 140%;

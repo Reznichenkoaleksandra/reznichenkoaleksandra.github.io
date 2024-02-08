@@ -1,0 +1,20 @@
+/* css до домашньої роботи 5 */
+*{
+  font-family: 'Roboto', sans-serif;
+  font-size:1em;
+}
+div {
+  font-size:1.6em;
+} 
+div span{
+  font-size:1em;
+}
+div span span {
+  font-size: 1.6em;
+}
+div strong {
+  font-size: 1em;
+}
+ul>li {
+  list-style-type: square;
+}

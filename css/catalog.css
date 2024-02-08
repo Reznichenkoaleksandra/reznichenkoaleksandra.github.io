@@ -1,1 +1,6 @@
 /* catalog.css */
+
+main .container h2 >span {
+  color:chocolate;
+  text-transform: uppercase;
+}
