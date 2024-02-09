@@ -4,16 +4,14 @@
   font-size:1em;
 }
 div {
-  font-size:1.6em;
-} 
-div span{
   font-size:1em;
+} 
+span{
+  font-size:1.6em;
 }
-div span span {
-  font-size: 1.6em;
-}
-div strong {
-  font-size: 1em;
+
+strong {
+  font-size: 1.6rem;
 }
 ul>li {
   list-style-type: square;
