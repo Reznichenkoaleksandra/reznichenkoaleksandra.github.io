@@ -1,22 +1,51 @@
 /* footer */
 .page-footer{
-color: var(--footer-text-color);
-background-color: var(--footer-bg-color);
+/* змінні footer */
+--footer-bcg-color:rgb(131, 173, 145);
+--footer-socials-bcg-color:rgb(125,156,135);
+--footer-ligal-bcg-color: rgb(107,133,115);
+--footer-a-color: rgb(60, 80, 72);
+--footer-light-color:#c7d6cb;
+--footer-a-font-size: 0.85rem;
+--footer-text-color:rgb(100, 119, 103);
+/* змінні footer end */
+
+.footer-main{
+  color: var(--footer-text-color);
+  background-color: var(--footer-bcg-color);
+  >.footer-main-item {
+    >ul>li>a{
+    color: var(--footer-a-color);
+    font-size: var(--footer-a-font-size);
+    }
+    >ul>li>a:hover {
+    color: var(--footer-light-color);
+    }
+  >.footer-title{
+    font-size: 1.1rem;
+    color:var(--footer-light-color) ;
+  }}
 }
-.page-footer ul {
-  list-style: none;
-}
-.page-footer ul > li >a{
-color: rgb(60, 80, 72);
+.footer-socials{
+  background-color: var(--footer-socials-bcg-color);
+  >.footer-socials-list>li>a>i{
+    font-size: 1.25rem;
+    color: var(--footer-a-color);
+  }
+    >.footer-socials-list>li>a>i:hover {
+      font-size: 1.25rem;
+      color: var(--footer-light-color);
+    }
 }
 .footer-ligal{
-background-color:rgb(107, 133, 115);
-ul li a{
-color: rgb(164, 183, 170);
+  background-color: var(--footer-ligal-bcg-color);
+  ul>li{
+    white-space: nowrap;
+  >a{
+    color: var(--footer-light-color);
+  }
+  >a:hover{
+    color: var(--footer-a-color);
+  }
 }}
-.footer-socials{
-  background-color: rgb(125, 156, 135);
-  
-    ul li a {
-      color: rgb(102, 121, 108);
-}}
+}

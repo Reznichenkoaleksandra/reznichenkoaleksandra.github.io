@@ -1,7 +1,39 @@
 /* nav.css */
+
+
 .page-header {
   background-color: #e4efee;
+/* brand */
+  >.brand{
+color: var(--anchor-active-color);
+font-weight: 600;
+font-size: 1.1rem;
 }
-.page-header .brand {
+  >.navbar{
+    > a {
+font-size: 1.1rem;
+color: var(--anchor-color) ;
+}
+    >a:hover {
+  color: var(--anchor-active-color);
+  text-decoration: underline;
+}
+}
+  > .toolbar {
+    > a {
+  font-size: 1.1rem;
+  color: var(--anchor-color);
+}
+    >a:hover{
   color: var(--anchor-active-color);
 }
+    >a:active{
+  color: goldenrod;
+}
+}
+}
+
+
+
+
+

@@ -1,6 +1,43 @@
 /* catalog.css */
 
-main .container h2 >span {
-  color:chocolate;
-  text-transform: uppercase;
+.product-container {
+  background-color: var(--primary-bg-color);
+  >.product{
+    >.icons{
+      >a{
+        background-color: var(--primary-bg-color);
+        color: var(--anchor-color);
+      }
+      >a:hover{
+        background-color: var(--anchor-color);
+        color: var(--primary-bg-color);
+      }
+    }
+    >.image{
+
+    }
+    >.content{
+      >h3{
+
+      }
+      >.price{
+        font-weight: 600;
+        color: var(--anchor-active-color);
+      }
+      >.price:before {
+        color: var(--anchor-active-color);
+        content: var(--currency-symbol);
+    }
+  }
+
 }
+}
+
+ul.categories a:hover {
+  color: var(--anchor-active-color);
+  text-decoration: underline;
+}
+ul.categories li:nth-child(even){
+  background-color: lightgray;
+}
+

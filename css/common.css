@@ -1,20 +1,15 @@
 /* common css */
-* {
-  margin: 0;
-  /* 1rem=16px */
-  /* font-family: 'Libre Franklin', sans-serif; */
-  --primary-font-family:'Libre Franklin', sans-serif;
-  --primary-font-size:0.875rem;
-}
 
-html{
+:root{
   --primary-text-color:#000000;
   --primary-bg-color:#f0f4e2;
-  --footer-text-color:rgb(76, 88, 78);
-  --footer-bg-color:rgb(131, 173, 145);
   --main-color:rgb(5, 72, 28);
   --anchor-color:rgb(94, 134, 106);
   --anchor-active-color:rgb(34, 83, 59); 
+  --currency-symbol:"\20B4";
+  --primary-font-family: 'Libre Franklin', sans-serif;
+  --primary-font-size: 0.875rem;
+  margin: 0;
 }
 
 body{
@@ -37,4 +32,7 @@ h2 {
 a{
   color: var(--anchor-color);
   text-decoration:none;
+}
+ul{
+  list-style: none;
 }
