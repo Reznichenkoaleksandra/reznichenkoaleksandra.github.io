@@ -29,21 +29,14 @@ color: orange;
 }
 
 .task-05{
->ul>li:first-of-type{
-  color: orange;
-}
->ul>li>span:first-of-type{
-  color: orange;
-}
+  >ul :first-of-type{
+    color: orange;
+  }
 }
 .task-06 {
-  >ul>li:last-of-type {
-    color: orange;
-  }
-
-  >ul>li>span:last-of-type {
-    color: orange;
-  }
+>ul :last-of-type{
+  color: orange;
+}
 }
 .task-07{
 ul>li:not(.first-item){

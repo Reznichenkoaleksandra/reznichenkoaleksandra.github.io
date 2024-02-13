@@ -1,5 +1,5 @@
 /* catalog.css */
-
+/* index.html */
 .product-container {
   background-color: var(--primary-bg-color);
   >.product{
@@ -33,11 +33,26 @@
 }
 }
 
-ul.categories a:hover {
-  color: var(--anchor-active-color);
-  text-decoration: underline;
+/* catalog-html */
+aside{
+.text-uppercase {
+  text-transform: uppercase;
 }
-ul.categories li:nth-child(even){
+.bg-dark{
+background-color: black;
+}
+.text-white{
+  color: white;
+}
+ul.categories li a {
+  color: indigo;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+ul.categories li a:hover {
   background-color: lightgray;
 }
+}
+
+
 
