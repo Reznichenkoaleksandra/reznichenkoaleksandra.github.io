@@ -1,0 +1,21 @@
+:root{
+  background-color: #d5d5bb9b;
+}
+ul {
+  list-style:none;
+}
+
+a{
+  color: #444426;
+  text-decoration: none;
+}
+a:active{
+  color:gold;
+}
+a:visited{
+  color:#bbaf58ed;
+}
+a:hover {
+  color: #ca8350;
+  background-color: #d5d59c;
+}

@@ -13,13 +13,13 @@
         color: var(--primary-bg-color);
       }
     }
-    >.image{
+    /* >.image{
 
-    }
+    } */
     >.content{
-      >h3{
+      /* >h3{
 
-      }
+      } */
       >.price{
         font-weight: 600;
         color: var(--anchor-active-color);
