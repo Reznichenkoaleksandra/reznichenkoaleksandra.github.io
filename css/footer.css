@@ -26,17 +26,24 @@
     color:var(--footer-light-color) ;
   }}
 }
+
 .footer-socials{
   background-color: var(--footer-socials-bcg-color);
-  >.footer-socials-list>li>a>i{
+  text-align: center;
+  >.footer-socials-list{
+  >li
+  {display: inline-block;
+  >a>i{
     font-size: 1.25rem;
     color: var(--footer-a-color);
-  }
+    margin-right: 0.5rem;
+  }}}
     >.footer-socials-list>li>a>i:hover {
       font-size: 1.25rem;
       color: var(--footer-light-color);
     }
 }
+
 .footer-ligal{
   background-color: var(--footer-ligal-bcg-color);
   ul>li{
