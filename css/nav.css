@@ -3,6 +3,11 @@
 
 .page-header {
   background-color: #e4efee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 /* brand */
   >.brand{
 color: var(--anchor-active-color);

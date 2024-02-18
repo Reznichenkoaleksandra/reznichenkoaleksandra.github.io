@@ -23,5 +23,15 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 2rem;
 
+}
+.btn-red-gradient{
+  background:rgb(7 86 129/65%) ;
+  border: 0.1rem solid black;
+  border-radius: 5%;
+  tab-size: 2rem;
+  font-weight: 600;
+  padding: 0.25rem;
+  color: rgb(0, 35, 44);
 }
