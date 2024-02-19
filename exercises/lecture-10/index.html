@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson-10</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logo32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+  .wrapper {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: space-between;
+
+  }
+
+  .item-blue {
+    background-color: blue;
+    flex-grow: 3;
+  }
+
+  .item-orange {
+    background-color: orange;
+  }
+
+  .item-green {
+    background-color: green;
+    flex-grow:1 ;
+  }
+
+  .item {
+    color: white;
+    width: 100px;
+  }
+</style>
+
+
+</head>
+<body>
+    <nav>
+      <h3>Lesson-10</h3>
+      <a href="/index.html">home</a>
+      <a href="/exercises/index.html">exercises</a>
+    </nav>
+
+    <h2>CSS Flex Property</h2>
+    <div class="wrapper">
+      <div class="item item-blue">CSS 400px</div>
+      <div class="item item-orange">Flex 100px</div>
+      <div class="item item-green">Property 200px</div>
+    </div>
+
+    <div class="tasks-2,3" style="display: flex; width: 700px; justify-content: space-between;">
+    <div class="task-2" style="padding: 0.25rem; margin: 1rem; border: 1px solid; box-sizing:content-box; width: fit-content; background-color: #017cb983; border-radius: 8px;">
+      <a href="navbar/index.html" style="text-decoration: none; color: indigo; text-transform: uppercase;">navbar-lesson-10</a>
+    </div>
+    <div class="task-3"
+      style="padding: 0.25rem; margin: 1rem; border: 1px solid; box-sizing:content-box; width: fit-content; background-color: #b9018e83; border-radius: 8px;">
+      <a href="layout/index.html"
+        style="text-decoration: none; color: indigo; text-transform: uppercase;">layout-lesson-10</a>
+    </div>
+    </div>
+</body>
+</html>

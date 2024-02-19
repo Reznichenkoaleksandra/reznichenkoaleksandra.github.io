@@ -11,12 +11,17 @@
 /* змінні footer end */
 
 .footer-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   color: var(--footer-text-color);
   background-color: var(--footer-bcg-color);
+  padding: 1.25rem 1.875rem;
   >.footer-main-item {
     >ul>li>a{
     color: var(--footer-a-color);
     font-size: var(--footer-a-font-size);
+    text-align: left;
     }
     >ul>li>a:hover {
     color: var(--footer-light-color);
@@ -24,12 +29,15 @@
   >.footer-title{
     font-size: 1.1rem;
     color:var(--footer-light-color) ;
+    text-align: center;
   }}
 }
 
 .footer-socials{
   background-color: var(--footer-socials-bcg-color);
   text-align: center;
+  display: flex;
+  justify-content: center;
   >.footer-socials-list{
   >li
   {display: inline-block;
@@ -46,7 +54,10 @@
 
 .footer-ligal{
   background-color: var(--footer-ligal-bcg-color);
-  ul>li{
+  ul{
+  display: flex;
+  flex-wrap: wrap;
+  >li{
     white-space: nowrap;
   >a{
     color: var(--footer-light-color);
@@ -54,5 +65,9 @@
   >a:hover{
     color: var(--footer-a-color);
   }
+ 
+} >li:nth-last-child(2) {
+   flex: 1;
+ }
 }}
 }

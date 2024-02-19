@@ -3,11 +3,16 @@
 }
 ul {
   list-style:none;
+  padding-bottom: 0.5rem;
 }
 
+li{
+  padding-bottom: 0.25rem;
+}
 a{
   color: #444426;
   text-decoration: none;
+  margin-right: 0.75rem;
 }
 a:active{
   color:gold;

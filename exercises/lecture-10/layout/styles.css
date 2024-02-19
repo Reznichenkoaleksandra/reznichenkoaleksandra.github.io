@@ -1,0 +1,24 @@
+*{
+  
+  padding: 0;
+}
+body {
+  --padding: 5vw;
+  --max-width: 180ch;
+}
+
+.flexbox {
+  --min: 30ch;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  justify-content: space-around;
+  border: 2px solid;
+  list-style: none;
+}
+.card{
+  border: 2px solid;
+  flex: var(--min);
+}

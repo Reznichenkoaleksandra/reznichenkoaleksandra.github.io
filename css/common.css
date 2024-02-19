@@ -1,6 +1,9 @@
 /* common css */
-*{
+*,
+*::before,
+*::after {
   margin: 0;
+  box-sizing: border-box;
 }
 :root{
   --primary-text-color:#000000;
