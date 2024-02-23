@@ -1,0 +1,25 @@
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,30%);
+  grid-template-areas: 
+  "h h h"
+  "m m s"
+  "f f f";
+}
+.header {
+  grid-area: h;
+  background-color: rgba(127, 255, 212, 0.304);
+}
+.main{
+  grid-area: m;
+  background-color: rgba(137, 43, 226, 0.189);
+}
+.sidebar {
+  grid-area: s;
+  background-color: #eb565645;
+}
+.footer{
+  grid-area: f;
+  background-color: rgba(210, 105, 30, 0.238);
+}

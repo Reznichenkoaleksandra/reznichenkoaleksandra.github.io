@@ -4,7 +4,7 @@
   background-position: left center;
   background-size: cover;
   background-attachment: fixed;
-  height: 8rem;
+  height: 10rem;
 }
 .text-right {
   text-align: right;
@@ -145,4 +145,15 @@
 
 .text-center {
   text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flex-container >* {
+  width: 100%;
 }

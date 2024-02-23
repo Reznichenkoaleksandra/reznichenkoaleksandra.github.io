@@ -6,6 +6,9 @@
 }
 
 .product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.5rem;
   /* background-color: var(--primary-bg-color); */
   >.product{
    width: 15rem;
@@ -105,5 +108,13 @@ ul.categories li a:hover {
 }
 }
 
+@media (min-width:44rem){
 
+#catalog {
+  display: grid;
+  gap: .1rem;
+  grid-template-columns:15rem auto;
+  
+  
+}}
 
