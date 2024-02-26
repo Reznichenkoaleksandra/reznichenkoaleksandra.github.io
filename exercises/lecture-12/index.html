@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-12</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        margin:0 ;
+      }
+    
+      body {
+        color: #000;
+        background: #fff;
+        font-family: Arial, sans-serif;
+        padding: 1em;
+      }
+      .hw {
+        margin: 2rem;
+        a{
+          margin-right: 1.5em;
+          font-size: 5vw;
+          text-decoration: none;
+          color: brown;
+        }
+        a:hover {
+          color: rgb(57, 49, 0);
+          background-color: bisque;
+        }
+      }
+      @media only screen and (max-width:767px) {
+        p {
+          /* font-size: 16px;  або для плавності*/
+          font-size: clamp(16px,2.5vw,20px);
+          background-color: rgba(137, 43, 226, 0.233);
+        }
+      }
+      @media only screen and (min-width:768px) and (max-width:1920px){
+        p{
+          background-color: aquamarine;
+          /* font-size: clamp(20px,calc(20px + 16*((100vw- 768px)/1152)),36px); */
+          /* не можу зрозуміти, чому не працює ф-ція з обчислюванням */
+          font-size: clamp(20px, 2.5vw, 36px);
+        }
+      }
+      @media only screen and (min-width:1921px) {
+        p {
+           font-size: clamp(36px,2.5vw,48px);
+        }
+      } 
+
+    </style>
+</head>
+<body translate="no">
+    <nav class="nav-for-homework">
+      <h3>Lesson-12</h3>
+      <a href="/index.html">home</a>
+      <a href="/exercises/index.html">exercises</a>
+    </nav>
+
+<p>
+  This text has a font size of 20px at viewport width of 768px and font size of 36px when viewport width is 1920px. But
+  if the viewport width is less than 768px, the font-size won't get lower than 16px and if the viewport width is more
+  than 1920px font size will stop scaling at 48px.
+</p>
+
+<div class="hw">
+<a href="grid-areas/index.html">grid-area</a>
+<a href="navbar/index.html">navbar</a> 
+</div>
+</body>
+</html>
