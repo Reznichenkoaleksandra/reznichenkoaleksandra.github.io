@@ -1,15 +1,4 @@
-/* <!-- <section class="breadcrumb-bg-light">
 
-  <div class="breadcrumb-container">
-    <div class="breadcrumb-title">
-      Contact Us
-      <ul class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Contact</li>
-      </ul>
-    </div>
-  </div> */
 
 .breadcrumb-bg-light{
 background-color: rgb(161 161 161/0.1);
@@ -54,5 +43,10 @@ background-color: rgb(161 161 161/0.1);
     content: var(--breadcrumb-divider);
     }
 
+  }
+}
+@media (min-width:20rem)and (max-width:48rem){
+  .breadcrumb-bg-light{
+    width: 80%;
   }
 }

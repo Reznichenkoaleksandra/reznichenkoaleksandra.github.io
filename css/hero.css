@@ -6,4 +6,12 @@
   background-image: url(/img/backgrounds/bg-banner.jpg);
   background-position: center center;
   background-size: cover;
+  margin-top: 3rem;
+}
+@media screen and (min-width:20rem) and (max-width:48rem){
+  .hero{
+    width: 80%;
+    margin-top: 0;
+  }
+  
 }

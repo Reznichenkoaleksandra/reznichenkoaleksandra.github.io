@@ -5,6 +5,8 @@
   background-size: cover;
   background-attachment: fixed;
   height: 10rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .text-right {
   text-align: right;
@@ -156,4 +158,11 @@
 }
 .flex-container >* {
   width: 100%;
+}
+
+@media (min-width:20rem)and (max-width:48rem){
+  .divider{
+    width: 80%;
+    padding-top: 4rem;
+  }
 }

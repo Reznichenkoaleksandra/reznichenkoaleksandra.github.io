@@ -71,3 +71,8 @@
  }
 }}
 }
+@media (min-width:20rem)and (max-width:48rem){
+  .page-footer{
+    width: 80%;
+  }
+}

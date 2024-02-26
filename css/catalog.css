@@ -108,13 +108,26 @@ ul.categories li a:hover {
 }
 }
 
-@media (min-width:44rem){
+@media (min-width:20rem)and (max-width:48rem){
 
-#catalog {
+ .main-information{
+  width: 80%;
+  .product{
+    width: 95%;
+    margin: 0.5rem;
+   
+  }
+}
+.catalog-main{
+  width: 80%;
+>.container>.product-container>.product{
+    width: 95%;
+  }
+}
+/* #catalog {
   display: grid;
   gap: .1rem;
   grid-template-columns:15rem auto;
   
-  
-}}
-
+   */
+}
