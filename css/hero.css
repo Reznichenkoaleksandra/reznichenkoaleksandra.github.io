@@ -8,9 +8,9 @@
   background-size: cover;
   margin-top: 3rem;
 }
-@media screen and (min-width:20rem) and (max-width:48rem){
+@media  (min-width:16rem) and (max-width:48rem){
   .hero{
-    width: 80%;
+    width: 82.5%;
     margin-top: 0;
   }
   

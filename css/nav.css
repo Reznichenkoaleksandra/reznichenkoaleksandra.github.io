@@ -45,14 +45,14 @@ font-size: 1.1rem;
 }
 }
 
-@media screen and (min-width:20rem) and (max-width:48rem){
+@media (min-width:16rem) and (max-width:48rem){
   .page-header{
     display: block;
     width: min-content;
     height: 100%;
     justify-self: right;
     padding: 1rem;
-
+    
     .navbar{
       display: flex;
       flex-direction: column;
