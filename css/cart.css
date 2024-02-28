@@ -1,0 +1,59 @@
+/* cart css */
+@media (min-width:20rem) {
+  .cart-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 15rem;
+  }
+}
+
+.cart-main {
+  width: 100%;
+  border: 1px dotted  red;
+  margin: 0 auto;
+  & .header {
+    font-weight: 600; 
+    color: white;
+    background-color: rgba(40, 145, 75, 0.721);
+  }
+  .table{
+    display: block;
+  }
+  .row {
+    display: block;
+    padding: 0.8em 0 0.4em 0;
+
+  }
+  .row:nth-of-type(even) {
+    background-color: rgb( 0 0 0 / 0.1);
+  }
+  .cell {
+    padding: 2px 1rem;  
+    display: block;
+    margin-bottom: 0.8em;
+  }
+}
+
+@media (min-width:20rem) {
+  .table{
+    margin: 0 0 2.2 rem 0;
+    width: 100%;
+    box-shadow:  0 1px 3px rgb(0 0 0/0.2);
+    display: table;
+    
+  }
+  .row {
+    display: table-row;
+  
+  }
+  .cell{
+    display: table-cell;
+    padding: 6px 12px;
+   
+  }
+
+
+}
+.cart-sidebar{
+  border: 1px dotted goldenrod;
+}

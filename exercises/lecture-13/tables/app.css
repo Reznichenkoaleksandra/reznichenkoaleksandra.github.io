@@ -1,0 +1,31 @@
+th , td  {
+  padding:0.625rem ;
+  border: 1px solid lightgray;
+  text-align: left;
+  font-size: 1.125rem;
+  
+}
+th{
+  background-color: indigo;
+  color: white;
+  font-weight: 600;
+}
+tr:nth-last-of-type(even) {
+  background-color: lightgray;
+}
+@media (max-width:50rem) {
+  table , thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead > tr {
+    display: none;
+  }
+  tr{
+    border: 1px solid darkgray;
+  }
+  td{
+    border: none;
+    border-bottom: 1px solid lightgray;
+  }
+
+}
