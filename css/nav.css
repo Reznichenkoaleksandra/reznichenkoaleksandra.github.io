@@ -50,8 +50,9 @@ font-size: 1.1rem;
     display: block;
     width: min-content;
     height: 100%;
-    justify-self: right;
+    justify-content: right;
     padding: 1rem;
+    left: auto;
     
     .navbar{
       display: flex;
