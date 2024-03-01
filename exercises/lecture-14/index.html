@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson-14</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logo32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background: linear-gradient(
+        rgb(0 200 255) 0%,
+        rgb(0 150 255) 10%,
+        rgb(0 140 255) 20%,
+        rgb(0 130 255) 30%,
+        rgb(0 100 255) 50%,
+        rgb(0 40 255) 70%,
+        rgb(0 20 255) 100% );
+        height: 100vh;
+        width: 100%;
+    }
+    .box{
+      width: 150px;
+      height: 150px;
+      background-color: yellow;
+      border-radius: 50%;
+      background: linear-gradient(
+        rgb(255 255 0) 0%,
+        rgb(255 200 0) 10%,
+        rgb(255 180 0) 20%,
+        rgb(255 170 0) 30%,
+        rgb(255 160 0) 50%,
+        rgb(255 150 0) 70%,
+        rgb(255 130 0) 100% );
+        /* transition: all 5s ease-in-out; */
+      /* transform:  translate(150px, 10px) scale(1.1); */
+      animation: anim 20s ease-in-out infinite alternate ;
+    }
+    /* .box:hover{
+      transform: rotate(45deg)  scale(0.75);
+    } */
+
+    @keyframes anim {
+      0% {
+        /* background: pink; */
+        transform: translateY(50px) rotate(300deg) scale(1);
+      }
+      10%{
+        /* background-color: rgb(255 200 0/0.5); */
+        transform: translateX(150px) translateY(150px) scale(1.25);
+      }
+      20%{
+        transform: translateX(300px) translateY(300px) rotate(-60deg) scale(1.5);
+      }
+      40%{
+        /* background-color: rgb(255 200 0/0.5); */
+        transform: translateX(450px) translateY(450px) scale(1.75) rotate(45deg);
+      }
+      50%{
+        /* background-color: salmon; */
+      }
+      100%{
+        /* background-color: orange; */
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+ 
+  <nav class="nav-for-homework">
+    <h3>Lesson-14</h3>
+    <a href="/index.html">home</a>
+    <a href="/exercises/index.html">exercises</a>
+    <a href="scale/index.html">scale</a>
+    <a href="skew/index.html">skew</a>
+    <a href="rotate/index.html">rotate</a>
+    <a href="translate/index.html">translate</a>
+  </nav>
+
+  <div class="box"></div>
+ 
+  
+</body>
+
+</html>

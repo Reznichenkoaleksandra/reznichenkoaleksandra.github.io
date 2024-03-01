@@ -49,7 +49,7 @@ font-size: 1.1rem;
   .page-header{
     display: block;
     width: min-content;
-    height: 100%;
+    height: 100vh;
     justify-content: flex-end;
     padding: 0.25rem;
     left: auto;
