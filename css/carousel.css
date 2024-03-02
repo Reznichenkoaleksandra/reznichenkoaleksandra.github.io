@@ -60,3 +60,22 @@
  padding: 0.5rem 1rem;
  transform: translate(-50%, -50%);
 }
+
+.slider::before , .slider::after {
+  width: 200px;
+  z-index: 20;
+  background: linear-gradient(to right, rgb( 255 255 255) 0% , rgb(255 255 255/ 0)100%);
+  content:'';
+  height: 100px;
+  position: absolute;
+ 
+}
+.slider::before{
+  top: 0;
+  left: 0;
+}
+.slider::after{
+  top: 0;
+  right: 0;
+  transform: rotateZ(180deg);
+}

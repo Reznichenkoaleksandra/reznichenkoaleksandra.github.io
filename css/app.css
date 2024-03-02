@@ -160,9 +160,9 @@
   width: 100%;
 }
 
-@media (min-width:26rem)and (max-width:48rem){
+/* @media (min-width:26rem)and (max-width:48rem){
   .divider{
     width: 82.5%;
     padding-top: 4rem;
   }
-}
+} */

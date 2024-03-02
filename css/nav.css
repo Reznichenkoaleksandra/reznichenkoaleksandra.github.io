@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.825rem 7% ;
+  margin-bottom: 1rem;
   
 /* brand */
   >.brand{
@@ -45,23 +46,17 @@ font-size: 1.1rem;
 }
 }
 
-@media (min-width:16rem) and (max-width:48rem){
-  .page-header{
+/* top nav */
+@media (min-width:16rem) and (max-width:46rem) {
+  .navbar{
     display: block;
+    justify-content: center;
     width: min-content;
-    height: 100vh;
-    justify-content: flex-end;
-    padding: 0.25rem;
-    left: auto;
-    right: 0;
-    top:0;
+    height: min-content;
     
-    .navbar{
-      display: flex;
-      flex-direction: column;
-      
-    }
+
   }
-}
+  }
+
 
 
