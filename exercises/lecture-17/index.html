@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson-17</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/logo32.png">
+</head>
+<body>
+  <nav class="nav-for-homework">
+    <h3>Lesson-17</h3>
+    <a href="/index.html">home</a>
+    <a href="/exercises/index.html">exercises</a>
+  </nav>
+
+<script>
+//task 1 Визначити результат наступних логічних виразів:
+  let x = 3
+  let y = 4
+
+ x == 3 //true
+ x === "3" //false
+ x != 5 //true
+ x !== "5" //true
+ x !== 3 //false (X був верхнього регістру)
+ y > 5 //false
+ y >= 3 //true
+ y < 5 //true
+y <= 2 //false
+1 == true //true
+null == undefined //true
+NaN == NaN //false  (чому не порівнює?)
+</script>
+
+<script>
+  //task 2 Визначити результат наступних логічних виразів:
+  let x1 = 3;
+  let y1 = 4;
+  let z1 = 5;
+  
+    x1 ||= y1; //3
+    x1 || (y1 = z1);//3
+    x1 &&= y1;// 4
+    x1 && (y1 = z1);//5
+    x1 ??= y1; //3 - якщо х1 якщо закоментувати рядок  x1 &&= y1;// 4)
+               //4 - якщо х1 присвоєно значення у1
+
+    x1 ?? (y1 = z1);//3 - якщо х1 якщо закоментувати рядок  x1 &&= y1;// 4)
+                    //4 - якщо х1 присвоєно значення у1
+</script>
+<script>
+  // task 3
+  //Напишіть програму, що пропонує користувачеві вгадати якесь число, наприклад 3. 
+  //У разі успіху, потрібно вивести вітання користувачеві, наприклад - 'Congratulations, You did it!'
+  // Якщо число більше за 3, потрібно вивести повідомлення користувачеві, наприклад - 'The number is too long' 
+  //Якщо число менше за 3, потрібно вивести повідомлення користувачеві, наприклад - 'The number is short'
+
+let number = prompt('text your number')
+if (!isNaN(number)){
+
+if (number == 3){
+  alert('Congratulations, You did it!')
+}
+else if (number <3){
+  alert('The number is short')
+}
+else if (number >3){
+  alert('The number is too long')
+}}
+
+else {
+  alert('type number please')
+}
+</script>
+<script>
+//task 4
+// switch
+//Напишіть програму, що пропонує користувачеві ввести назву дня тижня, наприклад - Понеділок. 
+//Якщо користувач ввів Понеділок або Monday, вивести повідомлення "Start of the work week!" 
+//Якщо користувач ввів П'ятниця або Friday, вивести повідомлення "End of the work week!" 
+//В інших випадках вивести повідомлення "A regular day"
+let day = prompt("enter name of the day");
+switch (day){
+case "Monday" :
+case "понеділок" :
+alert ("Start of the work week!");
+break;
+case "Friday" :
+case "п'ятниця":
+alert("End of the work week!");
+break;
+case "Tuesday":
+case "Wednesday":
+case "Thursday":
+case "вівторок":
+case "середа":
+case "четвер":
+alert("A regular day");
+break;
+case "Saturday":
+case "Wednesday":
+case "субота":
+case "неділя":
+alert("Weekend");
+break;
+default:
+alert("try again");
+break;
+}
+</script>
+<script>
+//task 4
+// if
+let day2 = prompt("enter name of the day part 2");
+if(day2 === "Monday"){
+alert("Start of the work week!");
+}
+else if (day2 === "Friday"){
+alert("End of the work week!"); 
+}
+else if (day2 === "Tuesday" || day2 === "Wednesday"  || day2 ==="Thursday" ) {
+    alert("A regular day");} 
+else if (day2 === "Saturday" ||day2 === "Wednesday" ) {
+    alert("Weekend");
+  } 
+else {
+  alert("try again");
+}
+
+</script>
+
+<script>
+  // task 5 
+  // Напишіть версію програми, застосовуючи оператор if else
+
+let score = prompt('text your score');
+let grade ;
+
+if(!isNaN(score)){
+
+  if(score<50){
+    grade = "F !"
+    alert('your grade is ' + grade )
+  }
+  else if (score < 70) {
+    grade = "D !"
+    alert('your grade is '+ grade )
+  }
+  else if (score < 80) {
+    grade = "C !"
+    alert('your grade is ' + grade)
+  }
+    else if (score < 90) {
+    grade = "B !"
+    alert('your grade is ' + grade)
+  }
+   else{
+    grade = "A !"
+    alert('your grade is ' + grade)
+   }
+}
+else{
+  alert('text type number')
+}
+
+
+</script>
+
+<script>
+  //task 5 
+  // Напишіть версію програми, застосовуючи тернарний оператор
+
+  let score2 = prompt('text your score 2');
+
+const grade2 = score2 < 50 ? "F": 
+               score2 < 70 ? "D": 
+               score2 < 80 ? "C":
+               score2 < 90 ? "B":
+               "A"
+
+console.log(grade2);
+alert(grade2);
+</script>
+
+<script>
+  // task 6
+  // Виправити помилку у наступному коді:
+
+
+  let firstName = null;
+  let lastName = undefined;
+  let username = firstName ?? lastName ?? "Guest";
+
+  console.log(username); // "Guest"
+
+
+</script>
+
+</body>
+</html>
