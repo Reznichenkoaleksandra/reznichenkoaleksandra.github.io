@@ -1,4 +1,5 @@
-// // lesson 16
+//#region lesson 16
+//  lesson 16
 // "use strict";
 // var y = 3.14e10; //3.14E10
 // let c;//undefined
@@ -33,8 +34,8 @@
 // console.log(z);
 // const bigInt = 1234567890123456789012345678901234567890n;
 // console.log(bigInt + 12n);
-
-
+//#endregion
+//#region lesson 17
 // lesson 17
 
 // // alert("Hello");
@@ -139,3 +140,81 @@
 // console.log(x)
 // x = false ?? "hello";
 // console.log(x)
+//#endregion
+//#region lesson 18
+//lesson 18
+// let message = hello('world'); //hosting
+// console.log(message);
+// console.log(typeof (function () { }));
+// // let test = "I'm test" //error
+// // var test = "I'm test";//hosting
+// function hello(name, test, me = "me") {
+//   let msg = name ? null : "Enter name value";
+//   if(msg) console.log(msg);
+//   //body function
+//   // local scope
+//   // console.log("Hello " + name + " and " + me + "!");//undrfined
+//   // return "bla bla bla";
+//   // test = test || "I'm test";
+//   if (test == undefined){
+//     test = "bla bla bla";
+//   }
+//   // test = test ?? "I'm test";
+//   return "Hello " + name + " and " + me + "!" + " " + test;
+// }
+
+// // let message = hello('world');
+// // console.log(message);
+// // hello('world');
+// hello();
+// message = hello('world', "cats");
+// console.log(message);
+
+// console.log(hello('world')); //undefined
+
+
+// calc()
+// function calc(o, x, y) {
+//   switch (o) {
+//     case '+':
+//       return x + y;
+//     case '-':
+//       return x - y;
+//     default: return;
+//   }
+// }
+// let res = calc('*', 555, 555);
+// console.log(res);
+// // hi();
+// let hi = function (msg ="Hello function!" ) {
+//   console.log(
+//     msg
+//   )
+// }
+// // hi(); // function
+// hi("hello dogs")
+// var username = "Sasha"
+// function showMsgUser() {
+//   var msg = 'Hi ' + username + '!';
+//   alert(msg);
+//   console.log(msg);
+//   username = "Mike";
+// }
+// showMsgUser();
+// // username = 'Bob';
+// showMsgUser();
+
+// function greeting(name) {
+//   console.log("Hello " + name + "!");
+//   alert("Hi, " + name + "!")
+  
+// }
+// function getUserName(callback) {
+//   const name = prompt('Enter your name');
+//   callback(name);
+// }
+// getUserName(greeting);
+
+// (function() {
+//   //...
+// })()
