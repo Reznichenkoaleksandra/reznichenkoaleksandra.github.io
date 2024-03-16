@@ -218,3 +218,99 @@
 // (function() {
 //   //...
 // })()
+//#endregion
+//#region lesson 19
+
+//  let quote = "It's a beautiful day";
+// // let quote = 'It is a beautiful day';
+// // let quote = `It is a beautiful day`;
+//  let str = "He said, \"It is a beautiful day\""
+// let str = 'He said, "It\'s a beautiful day\"'
+// let str = `He said, "It's a beautiful day"`
+// // console.log(str.length);
+
+// // console.log(str[str.length-1]);//last symbol
+// let f1 = str[0]
+// console.log(f1)
+// console.log(str.slice(-1));//last symbol;
+// console.log(str.charAt(str.length - 1));
+
+
+// concatenation
+// let test = "He said, ";
+// console.log(test + quote);
+// console.log(test.concat(quote));
+
+// let firstName = "James";
+// let lastName = "Bond";
+// function fullName(a, b) {
+//   return a + ' ' + b;
+// }
+// console.log(fullName(firstName, lastName));
+
+let tamplate = `
+  <div>
+  <h1> My name is  ${fullName(firstName, lastName)}  </h1>
+  </div>
+`;
+console.log(tamplate);
+
+// let template = (x, y) => ` <div>
+//   <h1> My name is  ${fullName(x, y)}  </h1>
+//  </div>`;
+
+// console.log(template(firstName, lastName));
+// console.log(str.indexOf('i'.toLocaleUpperCase()));
+
+// let reptilianString = "     видалення пробілів ";
+// console.log(reptilianString.trimStart());
+
+// const chunk = 'password'
+// const password = '123&password!R'
+
+// console.log(password.includes(chunk));
+
+// let string = 'Hello';
+// let uppercase = string.toUpperCase();
+// console.log(uppercase);
+
+// // +044-416-2222
+// const pattern = /^\+[0-9]{1}[0-9]{0, 2}-[0-9]{3}-[0-9]{4}$/;
+
+// function validate(number) {
+//   const pattern = /^\+[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+    
+//   let matched = number.match(pattern);
+//   if (pattern.test(number)){
+//   console.log("Phone nuber is vslid", matched);
+//   return true;
+//   }
+//   else {
+//     console.log("Phone nuber is not vslid", matched);
+//   return false;
+//   }
+// }
+// validate('+044-456-2222')
+// validate('044-456-2222')
+
+// let string0 = 'Hello World';
+// // Divide a string into words
+// // This can be done when the passed pattern is a space
+// let words = string0.split(' '); // output ['Hello' , 'World']
+// // When the passed parameter is an empty string, the output array
+// // will carry each of the characters of the given string
+// let chars = string0.split('');
+// // output ["H","e","l","l","o"," ","W","o","r","l","d"]
+// console.log(string0);
+// console.log(words);
+// console.log(chars);
+
+// function isEmptyStr(str) {
+//   return (str ?? '') === '';
+// }
+// console.log("Is empty" , isEmptyStr(null)
+// )
+
+//#endregion
+
+
