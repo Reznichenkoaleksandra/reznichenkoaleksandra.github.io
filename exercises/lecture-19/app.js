@@ -77,18 +77,26 @@ console.log(getFullName(firstName, lastName));
 // task 9 Напишіть функцію greeting, що використовує виклик функції getFullName
 // та повертає такий результат: Hello, Tom Cat!
 
-function greeting(getFullName) {
-   return `Hello, ${getFullName}!`
+// function greeting(getFullName) {
+//    return `Hello, ${getFullName}!`
+  
+// }
+// console.log(greeting(getFullName(firstName, lastName)));
+
+function greeting(firstName, lastName) {
+  return "Hello " + getFullName(firstName, lastName) +"!";
   
 }
-console.log(greeting(getFullName(firstName, lastName)));
+console.log (greeting(firstName, lastName))
 
 
 // task 10 Використовуючи функцію greeting, створити такий шаблон:
 // <div><h1>Hello, Tom Cat!</h1></div>
 
-let div = `<div><h1>${greeting(getFullName(firstName,lastName))}</h1></div>`
-console.log(div)
+
+console.log(`<div><h1>${greeting(firstName, lastName)}</h1></div>`)
+
+console.log("<div><h1>" + greeting(firstName, lastName) + "</h1></div>")
 //  чи можна спростити даний вираз?
 
 // task 11 Маємо наступний код:
@@ -107,6 +115,8 @@ const phoneNumber = '\t  555-123\n ';
 // => '555-123'
 // => '555-123 \n'- не можу зрозуміти як отримати даний результат =(
 console.log(phoneNumber.length);
+
+console.log(phoneNumber.split(' ')[2]);
 console.log(phoneNumber.slice(3));
 
 
@@ -170,9 +180,10 @@ validate(name11);
 // Створити регулярний вираз,
 // який призначений для перевірки email на коректність.
 
-const pattern1 = /^[\w-]{2,18}@[a-z]{2,8}.[a-z]{1,3}$/;
+// const pattern1 = /^[\w-]{2,18}@[a-z]{2,8}.[a-z]{1,3}$/;
 function validate1(email) {
-  const pattern1 = /^[\w-]{2,18}@[a-z]{2,8}.[a-z]{1,3}$/;
+  // const pattern1 = /^[\w-]{2,18}@[a-z]{2,8}.[a-z]{1,3}$/;
+  const pattern1 = /^[a-zA-Z0-9._-]{2,}@[a-zA-Z0-9.-_]{2,}.[a-z]{1,}$/;
   let match = email.match(pattern1);
   if (pattern1.test(email)) {
     console.log('email is valid', match);
