@@ -248,12 +248,12 @@
 // }
 // console.log(fullName(firstName, lastName));
 
-let tamplate = `
-  <div>
-  <h1> My name is  ${fullName(firstName, lastName)}  </h1>
-  </div>
-`;
-console.log(tamplate);
+// let tamplate = `
+//   <div>
+//   <h1> My name is  ${fullName(firstName, lastName)}  </h1>
+//   </div>
+// `;
+// console.log(tamplate);
 
 // let template = (x, y) => ` <div>
 //   <h1> My name is  ${fullName(x, y)}  </h1>
@@ -312,5 +312,104 @@ console.log(tamplate);
 // )
 
 //#endregion
+//#region lesson 20
+// // об'єкти
+// const contacts = {
+//   address: {
+//     icon:"fa-globe-europe",
+//     street: "1/2 New street",
+//     city: "Kyiv",
+//     zip: "03101",
+//     country: "Ukraine",
+//       info() {
+//         return `
+//         <li class="mb-2"><a href="/contacts.htmal"><i class="${this.icon}"></i><span>${this.zip},${this.street},${this.city},${this.country}</span></a></li>
+//         `
+//       }
+//   },
 
+//   callCentre: {
+//     icon:"fas fa-phone",
+//     phone: "+380441234567",
+//     info() {
+//       return `
+//         <li class="mb-2"><a href="tel:${this.phone}"><i class="${this.icon}"></i><span>${this.phone}:This nomber is free if calling from ${contacts.address.country}, otherwise we advise You to use electronic form of communication.</span></a></li>
+//         `
+//     }
+//   },
+//   support: {
+//      icon:"fas fa-envelop",
+//     email: "test@gmail.com",
+//     info() {
+//       return `
+//         <li class="mb-2"><a href="mailto:${this.email}"><i class="${this.icon}"></i><span>Please feel free to write on email to ${this.email} or to use our ticketing sistem.</span></a></li>
+//         `
+//     }
+//   }
+  
+// }
+// console.log(contacts.address.info());
+// console.log(contacts.callCentre.info());
+// console.log(contacts.support.info());
 
+// console.dir(Object.keys(contacts));
+// console.dir(Object.values(contacts));
+// console.dir(Object.entries(contacts));
+
+// // /////
+
+// const product = {
+//   id: 1, 
+//   name: "Air Pads",
+//   price: 11,
+//   decription: "Product description",
+//   cover: "product-1.jpg",
+//   badge: {
+//     title: "Sale",
+//     color: "white",
+//     bg: "red"
+//   },
+//   stars: 4,
+//   category_id: 1,
+//   brand_id:2,
+// }
+
+// function createProduct(id, name, price) {
+//   const obj = {}
+//   obj.id = id;
+//   obj.name = name;
+//   obj.price = price;
+//   return obj;
+// }
+// const product1 = createProduct(1, "Product 1 name", 12);
+// const product2 = createProduct(2, "Product 2 name", 22);
+// const product3 = createProduct(3, "Product 3 name", 11);
+
+// console.log(createProduct(1, "Product name2", 22))
+
+// function Product(id, name, price) {
+//   this.id = id;
+//   this.name = name;
+//   this.price = price;
+// }
+// const product4 = new Product(4, "product 4 name", 44);
+// console.log(product4);
+
+// const currency = total =>
+//   parseFloat(Math.round(total * 100) / 100).toFixed(2); 
+
+// function cartItem(item, tax=0.07, shipping=0) {
+//   this.item = item;
+//   this.tax = tax;
+//   this.shipping = shipping;
+//   this.total = function () {
+//     // return parseFloat(Math.round(this.item.price * this.item.amount * 100) / 100).toFixed(2);
+//     return currency((this.item.price * this.item.amount) * (1 + this.tax) + this.shipping);
+//   } 
+// }
+
+// let productItem = { ...product4, amount: 4 };
+// let cart = new cartItem(productItem);
+// console.dir(cart);
+// console.log(cart.total());
+//#endregion
