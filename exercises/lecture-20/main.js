@@ -137,20 +137,6 @@ console.log(Object.hasOwn(mary, "prop")); //false
 
       
   const DirtyMartini = {
-        
-  enGin: "gin",
-  enVermouth: "vermouth",
-  enOliveJar: "olive jar",
-  enOlives: 'stuffed green olives',
-  enLiquid: 'fliud',
-  enLiquid2:'dash',
-  frGin: "de gin",
-  frVermouth: "de vermouth",
-  frOliveJar:"de saumure du pot d'olive",
-  frOlives: 'olives vertes farcies',
-  frLiquid: "ml",
-  frLiquid2: "trait",
-  ml: "(0.0351951ml)",
   gin: 6,
   vermouth: 1, 
   oliveJar: 1,
@@ -160,23 +146,20 @@ console.log(Object.hasOwn(mary, "prop")); //false
     english_please() {
     return `Dirty Martini EN
     ingredients:
-    ${this.gin} ${this.enLiquid} ${this.enGin}
-    ${this.vermouth} ${this.enLiquid2} ${this.enVermouth} ${this.ml}
-    ${this.oliveJar} ${this.enLiquid} ${this.enOliveJar}
-    ${this.olives} ${this.enOlives}`
+    ${this.gin} fluid ounces gin
+    ${this.vermouth} dash dry vermouth (0.0351951ml)
+    ${this.oliveJar} fluid ounce brine from olive jar
+    ${this.olives} stuffed green olives`
   },
 
     excuse_my_french() {
     return `Dirty Martini FR
     ingrédients:
-    ${this.gin * this.avoirdupois} ${this.frLiquid} ${this.frGin}
-    ${this.vermouth} ${this.frLiquid2} ${this.frVermouth} ${this.ml}
-    ${this.avoirdupois} ${this.frLiquid} ${this.frOliveJar}
-    ${this.olives} ${this.frOlives} `
+    ${this.gin * this.avoirdupois} ml de gin
+    ${this.vermouth} trait de vermouth sec (0.0351951ml)
+    ${this.avoirdupois} ml de saumure du pot d'olive
+    ${this.olives} olives vertes farcies`
     }
-   
-
-    
 }
       
 console.log(DirtyMartini.english_please())
