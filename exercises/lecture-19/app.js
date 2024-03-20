@@ -113,12 +113,12 @@ console.log(string1.trimEnd(string1));
 const phoneNumber = '\t  555-123\n ';
 // Потрібно отримати такі результати
 // => '555-123'
-// => '555-123 \n'- не можу зрозуміти як отримати даний результат =(
+// => '555-123 \n'
 console.log(phoneNumber.length);
 
 console.log(phoneNumber.split(' ')[2]);
 console.log(phoneNumber.slice(3));
-
+console.log(phoneNumber.trimStart());
 
 
 // task 12 Маємо наступний код:

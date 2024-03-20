@@ -63,23 +63,11 @@
 // Створити за допомогою createPerson 2 екземпляри об'єкта.
 
 // function createPerson(name) {
-//   this.name = name;
-//   function introduceSelf() {
-//     return `Hi, I'am ${this.name}`
-//   }
-//   console.log(introduceSelf())
-// }
-
-// createPerson("Sam");
-// createPerson("Jacky");
-// спочатку робила через функцію, потім гралась з обєктом та методом
-
-// function createPerson(name) {
 //    sayHi = {
 //     name: name,
 //     introduceSelf() {
 //     return `Hi, I'm ${name}.`
-//   }  
+//   }
 //   }
 //   console.log(sayHi.introduceSelf());
 // }
@@ -89,24 +77,49 @@
 
 // let person1 = createPerson("Scorpion");
 // let person2 = createPerson("Harry")
+
+
+function createPerson(name) {
+  return {
+    name: name,
+    introduceSelf(){
+      return `Hi I'm ${name}`
+    }
+  }
+}
+let barb = createPerson('Barbara');
+let elton = createPerson('Elton');
+console.log(barb.introduceSelf());
+console.log(elton.introduceSelf());
 // task 6 Створити функцію-конструктор Person,
 //  що приймає аргумент name та повертає новий об'єкт з властивістю name
 //  та методом introduceSelf.Створити за допомогою Person 2 екземпляри об'єкта mary та tom.
+//         OLD
+// function Person(name) {
+//   sayHi = {
+//     name: name,
+//     introduceSelf() {
+//     return `Hi, I'm ${name}.`
+//   }
+//   }
+//   console.log(sayHi.introduceSelf());
+// }
+//          NEW
+// function Person(name) {
+//   this.name = name;
+//   this.introduceSelf =
+//     function introduceSelf() {
+//       return `Hi I'm ${this.name}`
+//     }
+//   }
+// const mary = new Person("Mary");
+// const tom = new Person("Tom");
+// console.log(mary.introduceSelf());
+// console.log(tom.introduceSelf());
 
-function Person(name) {
-  sayHi = {
-    name: name,
-    introduceSelf() {
-    return `Hi, I'm ${name}.`
-  }  
-  }
-  console.log(sayHi.introduceSelf());
-}
-const mary = new Person("Mary");
-const tom = new Person("Tom");
-// визначити, чи містить об'єкт mary властивість під назвою prop.
+// // визначити, чи містить об'єкт mary властивість під назвою prop.
 
-console.log(Object.hasOwn(mary, "prop")); //false
+// console.log(Object.hasOwn(mary, "prop")); //false
 
 // task 7 Брудний мартіні – ідеальний коктейль для любителів оливкового.
 // Його можна приготувати на горілці чи джині за таким рецептом.
@@ -136,31 +149,31 @@ console.log(Object.hasOwn(mary, "prop")); //false
       //   4 stuffed green olives
 
       
-  const DirtyMartini = {
-  gin: 6,
-  vermouth: 1, 
-  oliveJar: 1,
-  olives: 4,
-  avoirdupois: 28.4131,
+//   const DirtyMartini = {
+//   gin: 6,
+//   vermouth: 1, 
+//   oliveJar: 1,
+//   olives: 4,
+//   avoirdupois: 28.4131,
 
-    english_please() {
-    return `Dirty Martini EN
-    ingredients:
-    ${this.gin} fluid ounces gin
-    ${this.vermouth} dash dry vermouth (0.0351951ml)
-    ${this.oliveJar} fluid ounce brine from olive jar
-    ${this.olives} stuffed green olives`
-  },
+//     english_please() {
+//     return `Dirty Martini EN
+//     ingredients:
+//     ${this.gin} fluid ounces gin
+//     ${this.vermouth} dash dry vermouth (0.0351951ml)
+//     ${this.oliveJar} fluid ounce brine from olive jar
+//     ${this.olives} stuffed green olives`
+//   },
 
-    excuse_my_french() {
-    return `Dirty Martini FR
-    ingrédients:
-    ${this.gin * this.avoirdupois} ml de gin
-    ${this.vermouth} trait de vermouth sec (0.0351951ml)
-    ${this.avoirdupois} ml de saumure du pot d'olive
-    ${this.olives} olives vertes farcies`
-    }
-}
+//     excuse_my_french() {
+//     return `Dirty Martini FR
+//     ingrédients:
+//     ${this.gin * this.avoirdupois} ml de gin
+//     ${this.vermouth} trait de vermouth sec (0.0351951ml)
+//     ${this.avoirdupois} ml de saumure du pot d'olive
+//     ${this.olives} olives vertes farcies`
+//     }
+// }
       
-console.log(DirtyMartini.english_please())
-console.log(DirtyMartini.excuse_my_french())
+// console.log(DirtyMartini.english_please())
+// console.log(DirtyMartini.excuse_my_french())
