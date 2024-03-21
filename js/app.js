@@ -359,7 +359,7 @@
 // // /////
 
 // const product = {
-//   id: 1, 
+//   id: 1,
 //   name: "Air Pads",
 //   price: 11,
 //   decription: "Product description",
@@ -396,7 +396,7 @@
 // console.log(product4);
 
 // const currency = total =>
-//   parseFloat(Math.round(total * 100) / 100).toFixed(2); 
+//   parseFloat(Math.round(total * 100) / 100).toFixed(2);
 
 // function cartItem(item, tax=0.07, shipping=0) {
 //   this.item = item;
@@ -405,11 +405,149 @@
 //   this.total = function () {
 //     // return parseFloat(Math.round(this.item.price * this.item.amount * 100) / 100).toFixed(2);
 //     return currency((this.item.price * this.item.amount) * (1 + this.tax) + this.shipping);
-//   } 
+//   }
 // }
 
 // let productItem = { ...product4, amount: 4 };
 // let cart = new cartItem(productItem);
 // console.dir(cart);
 // console.log(cart.total());
+//#endregion
+
+//#region lesson 21
+//масиви
+// let number = [1, 2, 3, 5];
+// const array = Array(4).fill(1);
+// number[1000] = 1000;
+// // console.log(number);
+// // console.log(array);
+// // console.log(number[3]);
+// number.length = 3;
+// console.log(number);
+//loop
+// for (let i = 0; i < number.length; i++) {
+//   console.log(number[i]);
+// }
+//while the same
+// let n = 0;
+// while (n < number.length) {
+//   console.log(number[n])
+//   n++
+// }
+//do
+// n = 0;
+// do {
+//   console.log(number[n])
+//   n++;
+// }while(n < number.length)
+
+// number.push('hi')
+// console.log(number)
+// number.pop()
+// console.log(number)
+
+// number.shift()
+// console.log(number)
+
+// number.unshift(10, 20, 22)
+// console.log(number)
+
+// function Cart(tax = 0.07, shipping = 0) {
+//   this.tax = tax;
+//   this.shipping = shipping;
+
+//   let cart = [];
+
+//   this.saveCart = function () {
+//     console.log(cart);
+//   }
+
+//   function Item(id, price, amount) {
+//     this.id = id;
+//     this.price = price;
+//     this.amount = amount;
+//   }
+
+//   this.addItemToCart = function (product) {
+
+//     for (let item in cart) {
+//       if (cart[item].id === product.id) {
+//         cart[item].amount += product.amount; 
+//         this.saveCart();
+//         return;
+//       }
+//     }
+
+//     let item = new Item(product.id, product.price, product.amount);
+//     cart.push(item);
+//     this.saveCart();
+//   }
+
+//   this.setCountForItem = function(id, amount) {
+//     for (let i in cart) {
+//       if (cart[i].id === id) {
+//         cart[i].amount = amount;
+//       }
+//     }
+//   }
+//   this.totalAmount = function () {
+//     let total = 0;
+//     for (let item in cart) {
+//       total += cart[item].amount;
+//     }
+//     return total;
+//   }
+//   this.totalInCart = function () {
+//     let total = 0;
+//     for (let item in cart) {
+//       total += cart[item].price * cart[item].amount
+//     }
+//     return (total * (1 + this.tax) + this.shipping);
+//   }
+//   this.remuveItemFromCart = function (id) {
+//     for (let item in cart) {
+//       if (cart[item].id === id) {
+//         cart[item].amount--;
+//         if (cart[item].amount === 0) {
+//           cart.splice(item, 1);
+//         }
+//         break;
+//       }
+//     }
+//     this.saveCart();
+//   }
+//   this.remuveAllItemFromCart = function (id) {
+//     for (let item in cart) {
+//       if (cart[item].id === id) {
+//         cart.splice(item, 1);
+//         break;
+//       }
+//     }
+//     this.saveCart();
+//   }
+//   this.clearCart = function () {
+//     cart = [];
+//     this.saveCart();
+//   }
+// }
+// const product1 = createProduct(1, "Product 1 name", 12);
+// const product2 = createProduct(2, "Product 2 name", 22);
+// const product3 = createProduct(3, "Product 3 name", 11);
+
+// let shoppingCart = new Cart();
+// let productItem = { ...product1, amount: 4 };
+
+// shoppingCart.addItemToCart(productItem);
+// productItem = { ...product2, amount: 2 };
+// shoppingCart.addItemToCart(productItem);
+// productItem = { ...product2, amount: 1 };
+// shoppingCart.addItemToCart(productItem);
+
+// console.log(shoppingCart.totalAmount());
+// console.log(shoppingCart.totalInCart());
+// shoppingCart.remuveItemFromCart(1);
+// shoppingCart.remuveAllItemFromCart(2);
+// console.log(shoppingCart.totalInCart());
+// shoppingCart.clearCart();
+// console.log(shoppingCart.totalInCart());
 //#endregion
