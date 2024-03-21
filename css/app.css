@@ -166,3 +166,18 @@
     padding-top: 4rem;
   }
 } */
+
+.test-css {
+  color: brown;
+  font: 600  2.5rem/1.7;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background-color: darkcyan;
+}
+.test-css-2 {
+  color: rgb(75, 17, 17);
+  font: 600 2.5rem/1.7;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background-color: rgb(220, 54, 167);
+}
