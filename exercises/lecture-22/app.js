@@ -1,4 +1,4 @@
-const classes = ['first', 'second', 'third', 'fourth'];
+
 
 // task 1 Отримати всі елементи з тегом h1.
 // Вивести на консоль тип отриманого об'єкту та його розмір.
@@ -54,26 +54,32 @@ for ( c = 0; c < cont.length; c++){
 
 // task 8 Знайти колекцію всіх елементів з селектором '.container header',
 //  зберегти її в змінній headers.Використовуючи цикл for для отриманої колекції headers, замінити заголовки h1 таким чином
-
+const classes = ['first', 'second', 'third', 'fourth'];
 let headers = document.getElementsByTagName('header')
 console.log(headers);
 // перший залишити h1 // другий замінити на h2 // третій замінити на h3
 // четвертий замінити на h4 зберегти початкові атрибути id та class
-
-for (let h = 0; h < headers.length; h++){
-    console.log(headers[h])
-    headers[1].innerHTML = "<h2 class='title' id='second-title'>Second Title</h2>"
-    headers[2].innerHTML = "<h3 class='title' id='third-title'>Third Title</h3>"
-    headers[3].innerHTML = "<h4 class='title' id='fourth-title'>Fourth Title</h4>"
-}
-
 // task 9 Використовуючи цикл for для колекції headers
 // та масив classes, додати до отриманих тегів - заголовків класи таким чином
 // до h1 додати клас first  // до h2 додати клас second
 // до h3 додати клас third  // до h4 додати клас fourth
+
+
 for (let h = 0; h < headers.length; h++){
-    headers[0].classList.add('first');
-    headers[1].classList.add('second');
-    headers[2].classList.add('third');
-    headers[3].classList.add('fourth');
+    console.log(headers[h]);
+    switch (h) {
+        case 0:     
+            break;
+        case 1:
+            headers[1].innerHTML = "<h2 class='title' id='second-title'>Second Title</h2>";
+            break;
+        case 2:
+            headers[2].innerHTML = "<h3 class='title' id='third-title'>Third Title</h3>";
+            break;
+        case 3:
+            headers[3].innerHTML = "<h4 class='title' id='fourth-title'>Fourth Title</h4>";
+            break;
+    } 
+    headers[h].classList.add(classes[h])
 }
+
