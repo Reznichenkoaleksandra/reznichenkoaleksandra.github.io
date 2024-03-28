@@ -4,6 +4,10 @@
   background-color: #ff0000;
   color: white;
 }
+.bg-new {
+  background-color: #44def9;
+  color: white;
+}
 
 .product-container {
   display: grid;
