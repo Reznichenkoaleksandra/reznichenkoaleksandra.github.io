@@ -37,11 +37,11 @@ btnSecondary.addEventListener('click', () => {
 
 let btnSuccess = document.querySelector('.btn-success');
 btnSuccess.addEventListener('mouseover', () => {
-    alertContent.className = 'alert-succes';
+    alertContent.className = 'alert-success';
     alertContent.textContent='A simple success alert—check it out!'
 })
 btnSuccess.addEventListener('mouseout', () => {
-    alertContent.classList.remove('alert-succes');
+    alertContent.classList.remove('alert-success');
     alertContent.textContent = '';
 })
 

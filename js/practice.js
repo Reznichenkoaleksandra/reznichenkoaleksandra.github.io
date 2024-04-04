@@ -137,52 +137,52 @@
 //     main();
 // }
 
-const productContainer = document.querySelector('.product-container');
+// const productContainer = document.querySelector('.product-container');
 
-let addToCart = productContainer.querySelector('.add-to-cart');
-let showDetail = productContainer.querySelector('.show-details');
-// console.dir(addToCart);
-addToCart.addEventListener('click', () => {
-    // console.dir(addToCart);
-})
-const dialog = document.getElementById('detail');
-showDetail.addEventListener('click', () => {
+// let addToCart = productContainer.querySelector('.add-to-cart');
+// let showDetail = productContainer.querySelector('.show-details');
+// // console.dir(addToCart);
+// addToCart.addEventListener('click', () => {
+//     // console.dir(addToCart);
+// })
+// const dialog = document.getElementById('detail');
+// showDetail.addEventListener('click', () => {
    
-    dialog.showModal();
-})
-dialog.querySelector('.close').addEventListener('click', () => {
-    dialog.close();
-})
+//     dialog.showModal();
+// })
+// dialog.querySelector('.close').addEventListener('click', () => {
+//     dialog.close();
+// })
 
-let addToCartButtons = productContainer.querySelectorAll('.add-to-cart');
-for (let item of addToCartButtons) {
-    item.addEventListener('click', () => {
-        console.log(item);
-    })
-}
+// let addToCartButtons = productContainer.querySelectorAll('.add-to-cart');
+// for (let item of addToCartButtons) {
+//     item.addEventListener('click', () => {
+//         console.log(item);
+//     })
+// }
 
-function CardProduct(item) {
-    this.item = item;
-    let addToCart = this.item.querySelector('.add-to-cart');
-    addToCart.addEventListener('click', function (event) {
-        console.log(event.target)
+// function CardProduct(item) {
+//     this.item = item;
+//     let addToCart = this.item.querySelector('.add-to-cart');
+//     addToCart.addEventListener('click', function (event) {
+//         console.log(event.target)
 
-        let parent = event.target.closest('.product');
-        let price = parent.querySelector('.product-price').innerText;
-        let name = parent.querySelector('.product-name').innerText;
-        let id = parent.querySelector('.product-name').getAttribute('id');
-        console.log( id , name , price)
+//         let parent = event.target.closest('.product');
+//         let price = parent.querySelector('.product-price').innerText;
+//         let name = parent.querySelector('.product-name').innerText;
+//         let id = parent.querySelector('.product-name').getAttribute('id');
+//         console.log( id , name , price)
 
-        let product = new Product(id, name, price)
-        product = {...product, amount:1}
-        console.log(product);
-        shoppingCart.addItemToCart(product);
-        console.log(shoppingCart.totalAmount())
-        console.log(shoppingCart.totalInCart())
-    });
+//         let product = new Product(id, name, price)
+//         product = {...product, amount:1}
+//         console.log(product);
+//         shoppingCart.addItemToCart(product);
+//         console.log(shoppingCart.totalAmount())
+//         console.log(shoppingCart.totalInCart())
+//     });
 
-}
-    let productCards = productContainer.querySelectorAll('.product');
-for (let item of productCards) {
-    new CardProduct(item);
-}
+// }
+//     let productCards = productContainer.querySelectorAll('.product');
+// for (let item of productCards) {
+//     new CardProduct(item);
+// }

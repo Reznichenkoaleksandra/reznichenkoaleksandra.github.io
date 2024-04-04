@@ -209,7 +209,71 @@ function CardProduct(item) {
         
  });
 }
-// lecture 24
 
+
+// footer add
+const template = document.createElement('template');
+template.innerHTML = `
+<footer class="page-footer mb-1">
+
+<section class="footer-main ">
+    <div class="footer-main-item">
+      <h2 class="footer-title">About</h2>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-main-item">
+      <h2 class="footer-title">Resources</h2>
+      <ul>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">eBooks</a></li>
+        <li><a href="#">Webinars</a></li>
+      </ul>
+    </div>
+    <div class="footer-main-item">
+      <h2 class="footer-title">Contact</h2>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Advertise</a></li>
+     </ul>
+    </div>
+</section>
+ 
+<section class="footer-socials py-3">
+  <ul class="footer-socials-list">
+    <li><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+    <li><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+    <li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+    <li><a target="_blank" href="https://ua.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+    <li><a target="_blank" href="https://github.com/Reznichenkoaleksandra/reznichenkoaleksandra.github.io"><i class="fab fa-github"></i></a></li>
+    <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</section>
+
+<section class="footer-ligal">
+  <ul>
+    <li><a href="#">Terms &amp; Conditions</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">2024 Copyright Shopaholic Inc. &copy;</a></li>
+  </ul>
+</section>
+
+</footer>
+`;
+
+let clone = template.content.cloneNode(true);
+document.body.appendChild(clone);
+
+let test = document.createElement('p');
+test.textContent = 'content 1'
+document.body.appendChild(test)
 
 
