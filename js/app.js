@@ -272,8 +272,8 @@ template.innerHTML = `
 let clone = template.content.cloneNode(true);
 document.body.appendChild(clone);
 
-let test = document.createElement('p');
-test.textContent = 'content 1'
-document.body.appendChild(test)
+// let test = document.createElement('p');
+// test.textContent = 'content 1'
+// document.body.appendChild(test)
 
 
